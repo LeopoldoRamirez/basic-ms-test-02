@@ -5,11 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start" : "node dist/index.js",
-    "buildrun" : "npm run build && npm run start",    
-    "devjs" : "nodemon -e ts  --exec \"npm run buildrun  \" ",
-    "devts" : "tsc-watch --onSuccess \" npm run start \" ",
-    "devcon": "concurrently \"tsc --watch\"  \"nodemon dist/index.js\"  "
+    "start": "node dist/index.js",
+    "buildrun": "npm run build && npm run start",
+    "devjs": "nodemon -e ts  --exec \"npm run buildrun  \" ",
+    "devts": "tsc-watch --onSuccess \" npm run start \" "
   },
   "keywords": [],
   "author": "",

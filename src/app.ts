@@ -14,7 +14,7 @@ export const init= async () =>{
     //configure routes
     app.use(router);
     
-    app.listen( 3001, ()=>{
+    app.listen( 3000, ()=>{
         console.log('Init ts microservice with typescript');
     })
 }
