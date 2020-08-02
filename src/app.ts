@@ -1,5 +1,8 @@
 import express from "express";
 import router from "./routes/index.route";
+import { appPort } from "./config";
+
+import "./database";
 
 export const init= async () =>{
     const app = express();
@@ -14,8 +17,8 @@ export const init= async () =>{
     //configure routes
     app.use(router);
     
-    app.listen( 3000, ()=>{
-        console.log('Init ts microservice with typescript');
+    app.listen( appPort, ()=>{
+        console.log( `Init ts Microservice with typescript on port ${appPort}` );
     })
 }
 

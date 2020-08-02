@@ -5,9 +5,9 @@ const router = Router();
 
 router.use('/notes',noteRouter);
 
-
+// Default route
 router.get('/', ( request, response:Response ) =>{
-    response.send('Hello Microservice');
+    response.send('Hello Microservice with Express and TypeScript');
 });
 
 
